@@ -738,3 +738,65 @@ html {
 .font-orbitron:hover {
   animation: glitch 0.3s ease-in-out;
 }
+
+
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 10; /* make sure it’s above nav */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: var(--neon-green);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate hamburger into X when checked */
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hide nav-links by default */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: var(--cyber-black);
+  padding: 20px;
+  border: 1px solid var(--neon-green);
+  border-radius: 8px;
+  box-shadow: var(--cyber-glow);
+  z-index: 5;
+}
+
+/* Show nav-links when checked */
+.menu-toggle:checked ~ .nav-links {
+  display: flex;
+}
+
+
+
