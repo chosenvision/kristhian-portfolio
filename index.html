@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristhian Pinili - Software Engineer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- Updated to JetBrains Mono for cyberpunk aesthetic -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="antialiased">
-    <!-- Redesigned navigation with cyberpunk styling -->
+    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 cyber-nav">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -44,23 +45,32 @@
         </div>
     </nav>
 
-    <!-- Completely redesigned hero section with cyberpunk matrix background -->
-    <section id="home" class="min-h-screen flex items-center cyber-hero pt-16">
-        <div class="matrix-bg"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10">
+    <!-- Add this after the hamburger button inside your nav -->
+<div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 bg-cyber-black p-6 rounded-lg shadow-lg absolute right-6 top-16 z-50">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center cyber-hero pt-16 px-6 lg:px-8">
+        <div class="matrix-bg absolute top-0 left-0 w-full h-full"></div>
+        <div class="max-w-7xl mx-auto relative z-10 w-full">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-4">
-                        <p class="text-lg font-mono text-neon-green cyber-text-glow">
-                            <span class="typing-cursor">$</span> whoami
-                        </p>
-                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight font-orbitron">
-                            Kristhian <span class="text-neon-green cyber-text-glow">Pinili</span>
-                        </h1>
-                        <p class="text-xl lg:text-2xl font-mono text-gray-300">
-                            <span class="text-neon-green">&gt;</span> Software Engineer & Problem Solver
-                        </p>
-                    </div>
+                <!-- Content Section -->
+                <div class="space-y-8 order-2 lg:order-1">
+                    <p class="text-lg font-mono text-neon-green cyber-text-glow">
+                        <span class="typing-cursor">$</span> whoami
+                    </p>
+                    <h1 class="text-5xl lg:text-6xl font-bold leading-tight font-orbitron">
+                        Kristhian <span class="text-neon-green cyber-text-glow">Pinili</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl font-mono text-gray-300">
+                        <span class="text-neon-green">&gt;</span> Software Engineer & Problem Solver
+                    </p>
                     <div class="cyber-terminal">
                         <div class="terminal-header">
                             <div class="terminal-buttons">
@@ -90,12 +100,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center lg:justify-end">
+
+                <!-- Avatar Section (Will stack above content in mobile view) -->
+                <div class="flex justify-center lg:justify-end mt-8 lg:mt-0 order-1 lg:order-2">
                     <div class="relative">
                         <div class="cyber-avatar">
                             <div class="avatar-border"></div>
                             <div class="avatar-content">
-                                 <img src="assets/kristhian1x1.jpg" alt="Kristhian Pinili" class="w-40 h-40 object-cover rounded-full border-4 border-neon-green shadow-lg">
+                                <img src="assets/kristhian1x1.jpg" alt="Kristhian Pinili" class="w-40 h-40 object-cover rounded-full border-4 border-neon-green shadow-lg">
                             </div>
                             <div class="avatar-scan"></div>
                         </div>
@@ -111,9 +123,9 @@
         </div>
     </section>
 
-    <!-- Redesigned about section with cyber styling -->
-    <section id="about" class="py-20 cyber-section">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- About Section -->
+    <section id="about" class="py-20 cyber-section px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
                     <span class="text-neon-green">&lt;</span>About<span class="text-neon-green">/&gt;</span>
@@ -122,7 +134,7 @@
                     Passionate about creating meaningful solutions that make a real impact
                 </p>
             </div>
-            <div class="grid lg:grid-cols-3 gap-12 items-center">
+            <div class="grid lg:grid-cols-3 gap-12">
                 <div class="lg:col-span-2 space-y-6">
                     <div class="cyber-card">
                         <p class="text-lg leading-relaxed text-gray-300 font-mono">
@@ -157,9 +169,9 @@
         </div>
     </section>
 
-    <!-- Enhanced skills section with cyberpunk design -->
-    <section id="skills" class="py-20">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- Skills Section (Responsive Grid) -->
+    <section id="skills" class="py-20 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
                     <span class="text-neon-green">&lt;</span>Skills<span class="text-neon-green">/&gt;</span>
@@ -272,7 +284,7 @@
         </div>
     </section>
 
-    <!-- Enhanced projects section with GitHub links -->
+<!-- Enhanced projects section with GitHub links -->
     <section id="projects" class="py-20 cyber-section">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
