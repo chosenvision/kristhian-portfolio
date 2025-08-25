@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Kristhian Pinili - Software Engineer Portfolio
 
 ## Overview
@@ -30,6 +31,8 @@ The project consists of the following files:
 ## Contact
 For inquiries or collaboration, please reach out via email at kristhianpinili@gmail.com.
 =======
+=======
+>>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
 # 👋 Hello there, I'm Kristhian Pinili!
 
 🎓 **BS in Computer Science Student**  
@@ -136,4 +139,7 @@ When I’m not coding or studying, you can find me:
 > "I don't just build programs — I build purpose through code."
 
 Thanks for stopping by! Let's learn, build, and grow together 🚀
+<<<<<<< HEAD
+>>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
+=======
 >>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
