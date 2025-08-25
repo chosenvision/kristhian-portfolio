@@ -22,7 +22,7 @@ Here are some of the projects I'm proud to have built or contributed to:
 
 - 🌾 **AgriLocate** – Crop recommendation system using weather and soil data.
 - 🧩 **CryptoCrafters** – Gamified learning platform for classical cryptography.
-- 📱 **HabiHub** – Android app to help users build and track habits.
+- 📱 **HabitHub** – Android app to help users build and track habits.
 - 🧳 **Flight Booking System** – Console-based reservation and ticketing platform.
 - 💻 **Edu Hub** – Career simulations and educational modules.
 - 🛠 **Home Planning Calculator** – Budget tool for home building cost estimates.
