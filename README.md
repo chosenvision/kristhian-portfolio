@@ -1,38 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Kristhian Pinili - Software Engineer Portfolio
-
-## Overview
-This portfolio showcases the work and skills of Kristhian Pinili, a junior software engineer. It includes various sections such as an introduction, skills, projects, experience, and contact information.
-
-## Project Structure
-The project consists of the following files:
-- **index.html**: The main HTML document for the portfolio.
-- **styles.css**: The stylesheet that defines the design and layout.
-- **script.js**: The JavaScript file for interactive features.
-- **README.md**: This documentation file.
-
-## Setup Instructions
-1. Clone the repository to your local machine.
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory.
-   ```
-   cd kristhian-portfolio
-   ```
-3. Open `index.html` in your web browser to view the portfolio.
-
-## Features
-- Responsive design for various screen sizes.
-- Interactive elements powered by JavaScript.
-- Sections for showcasing skills and projects.
-
-## Contact
-For inquiries or collaboration, please reach out via email at kristhianpinili@gmail.com.
-=======
-=======
->>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
 # 👋 Hello there, I'm Kristhian Pinili!
 
 🎓 **BS in Computer Science Student**  
