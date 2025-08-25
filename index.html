@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristhian Pinili - Software Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Updated to JetBrains Mono for cyberpunk aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+    <!-- Redesigned navigation with cyberpunk styling -->
+    <nav class="fixed top-0 w-full z-50 cyber-nav">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold cyber-logo">
+                        <span class="text-neon-green">&lt;</span>KP<span class="text-neon-green">/&gt;</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#about" class="nav-link">About</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="hamburger p-2">
+                        <span class="sr-only">Open menu</span>
+                        <div class="w-6 h-6 relative">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Completely redesigned hero section with cyberpunk matrix background -->
+    <section id="home" class="min-h-screen flex items-center cyber-hero pt-16">
+        <div class="matrix-bg"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <p class="text-lg font-mono text-neon-green cyber-text-glow">
+                            <span class="typing-cursor">$</span> whoami
+                        </p>
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight font-orbitron">
+                            Kristhian <span class="text-neon-green cyber-text-glow">Pinili</span>
+                        </h1>
+                        <p class="text-xl lg:text-2xl font-mono text-gray-300">
+                            <span class="text-neon-green">&gt;</span> Software Engineer & Problem Solver
+                        </p>
+                    </div>
+                    <div class="cyber-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-btn red"></span>
+                                <span class="terminal-btn yellow"></span>
+                                <span class="terminal-btn green"></span>
+                            </div>
+                            <span class="terminal-title">~/portfolio</span>
+                        </div>
+                        <div class="terminal-content">
+                            <p class="font-mono text-sm">
+                                <span class="text-neon-green">kristhian@dev:~$</span> cat about.txt<br>
+                                <span class="text-gray-300">"I don't just build programs — I build purpose through code."</span><br>
+                                <span class="text-gray-400">Detail-oriented, solutions-driven junior software engineer passionate about creating impactful digital experiences.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="cyber-btn-primary">
+                            <i class="fas fa-code mr-2"></i>
+                            View My Work
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#contact" class="cyber-btn-secondary">
+                            <i class="fas fa-terminal mr-2"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="cyber-avatar">
+                            <div class="avatar-border"></div>
+                            <div class="avatar-content">
+                                 <img src="C:\Users\krist\Downloads\kristhian1x1.jpg" alt="Kristhian Pinili" class="w-40 h-40 object-cover rounded-full border-4 border-neon-green shadow-lg">
+                            </div>
+                            <div class="avatar-scan"></div>
+                        </div>
+                        <div class="cyber-status-card">
+                            <div class="flex items-center space-x-2">
+                                <div class="status-indicator"></div>
+                                <span class="text-sm font-mono">ONLINE • Available for work</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redesigned about section with cyber styling -->
+    <section id="about" class="py-20 cyber-section">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+                    <span class="text-neon-green">&lt;</span>About<span class="text-neon-green">/&gt;</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+                    Passionate about creating meaningful solutions that make a real impact
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="cyber-card">
+                        <p class="text-lg leading-relaxed text-gray-300 font-mono">
+                            I'm a passionate junior software engineer currently pursuing a Bachelor of Science in Computer Science 
+                            at Batangas State University, where I maintain my status as a Dean's Lister. My journey in technology 
+                            is driven by a desire to create meaningful solutions that make a real impact.
+                        </p>
+                    </div>
+                    <div class="cyber-card">
+                        <p class="text-lg leading-relaxed text-gray-300 font-mono">
+                            Beyond coding, I'm actively involved in humanitarian efforts through "Just Shut Up and Love" and 
+                            participate in TechnoFusion workshops to advance my software engineering skills. I believe in 
+                            continuous learning and giving back to the community.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="cyber-stat-card">
+                        <div class="text-3xl font-bold mb-2 text-neon-green font-orbitron">7+</div>
+                        <p class="font-mono">Projects Completed</p>
+                    </div>
+                    <div class="cyber-stat-card">
+                        <div class="text-3xl font-bold mb-2 text-neon-green font-orbitron">4+</div>
+                        <p class="font-mono">Programming Languages</p>
+                    </div>
+                    <div class="cyber-stat-card">
+                        <div class="text-3xl font-bold mb-2 text-neon-green font-orbitron">3+</div>
+                        <p class="font-mono">Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced skills section with cyberpunk design -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+                    <span class="text-neon-green">&lt;</span>Skills<span class="text-neon-green">/&gt;</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+                    A comprehensive toolkit for building modern applications
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="cyber-skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-code text-4xl mb-4 text-neon-green"></i>
+                        <h3 class="text-xl font-bold mb-4 font-orbitron">Programming Languages</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="font-mono">Python</span>
+                            <i class="fab fa-python text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">JavaScript</span>
+                            <i class="fab fa-js-square text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">C++</span>
+                            <i class="fas fa-code text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Java</span>
+                            <i class="fab fa-java text-neon-green"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-globe text-4xl mb-4 text-neon-green"></i>
+                        <h3 class="text-xl font-bold mb-4 font-orbitron">Web Development</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="font-mono">HTML/CSS</span>
+                            <i class="fab fa-html5 text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Frontend Dev</span>
+                            <i class="fas fa-laptop-code text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Responsive Design</span>
+                            <i class="fas fa-mobile-alt text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">UI/UX Design</span>
+                            <i class="fas fa-paint-brush text-neon-green"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-tools text-4xl mb-4 text-neon-green"></i>
+                        <h3 class="text-xl font-bold mb-4 font-orbitron">Tools & Frameworks</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="font-mono">Android Studio</span>
+                            <i class="fab fa-android text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Firebase</span>
+                            <i class="fas fa-fire text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Git & GitHub</span>
+                            <i class="fab fa-github text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">MySQL</span>
+                            <i class="fas fa-database text-neon-green"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-skill-card">
+                    <div class="skill-header">
+                        <i class="fas fa-brain text-4xl mb-4 text-neon-green"></i>
+                        <h3 class="text-xl font-bold mb-4 font-orbitron">Core Skills</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span class="font-mono">Problem Solving</span>
+                            <i class="fas fa-puzzle-piece text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">System Design</span>
+                            <i class="fas fa-sitemap text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Team Collaboration</span>
+                            <i class="fas fa-users text-neon-green"></i>
+                        </div>
+                        <div class="skill-item">
+                            <span class="font-mono">Leadership</span>
+                            <i class="fas fa-crown text-neon-green"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced projects section with GitHub links -->
+    <section id="projects" class="py-20 cyber-section">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+                    <span class="text-neon-green">&lt;</span>Projects<span class="text-neon-green">/&gt;</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+                    A showcase of my technical expertise and creative problem-solving
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-seedling text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">AgriLocate</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        Crop recommendation system using weather and soil data to help farmers make informed decisions.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">Python</span>
+                        <span class="cyber-tag">ML</span>
+                        <span class="cyber-tag">Data Analysis</span>
+                    </div>
+                    <a href="https://github.com/chosenvision/AgriLocate" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-lock text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">CryptoCrafters</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        Gamified learning platform for classical cryptography with interactive challenges and tutorials.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">Java</span>
+                        <span class="cyber-tag">Game Dev</span>
+                        <span class="cyber-tag">Education</span>
+                    </div>
+                    <a href="https://github.com/chosenvision" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">HabitHub</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        Android app to help users build and track habits with progress visualization and reminders.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">Android</span>
+                        <span class="cyber-tag">Firebase</span>
+                        <span class="cyber-tag">Java</span>
+                    </div>
+                    <a href="https://github.com/chosenvision/Habit_Hub" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-plane text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">Flight Booking System</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        Console-based reservation and ticketing platform with seat management and booking features.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">C++</span>
+                        <span class="cyber-tag">System Design</span>
+                        <span class="cyber-tag">Database</span>
+                    </div>
+                    <a href="https://github.com/chosenvision/Flight-Booking-System" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-graduation-cap text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">Edu Hub</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        Career simulations and educational modules to help students explore different career paths.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">Python</span>
+                        <span class="cyber-tag">Education</span>
+                        <span class="cyber-tag">Simulation</span>
+                    </div>
+                    <a href="https://github.com/chosenvision" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="cyber-project-card group">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-gamepad text-neon-green text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold font-orbitron">Reforge: Rise of Seven Cities</h3>
+                    </div>
+                    <p class="mb-6 text-gray-300 font-mono">
+                        RPG game with cities, pets, bosses, and immersive gameplay mechanics.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="cyber-tag">Game Dev</span>
+                        <span class="cyber-tag">C++</span>
+                        <span class="cyber-tag">Graphics</span>
+                    </div>
+                    <a href="https://github.com/chosenvision" target="_blank" class="cyber-project-link">
+                        <i class="fab fa-github mr-2"></i>
+                        View on GitHub 
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- Enhanced experience section with timeline design -->
+    <!-- Enhanced experience section with cyber styling -->
+    <section id="experience" class="py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+                    <span class="text-neon-green">&lt;</span>Experience<span class="text-neon-green">/&gt;</span>
+                </h2>
+                <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+                    Building expertise through hands-on experience and continuous learning
+                </p>
+            </div>
+            
+           <div class="mb-16">
+    <div class="cyber-card mb-8">
+        <div class="flex items-start space-x-6">
+            <div class="cyber-icon-lg">
+                <i class="fas fa-briefcase text-neon-green text-2xl"></i>
+            </div>
+            <div class="flex-1">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                    <h3 class="text-2xl font-bold font-orbitron">Website Development Intern</h3>
+                    <span class="text-lg font-mono text-neon-green">National Transmission Corporation</span>
+                </div>
+                <p class="text-lg leading-relaxed text-gray-300 font-mono">
+                    Tasked with creating a comprehensive ticketing system for the IT/IS Division. 
+                    Developed a system that allows all incoming requests to be processed efficiently, 
+                    improving workflow and response times for technical support.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Quality Assurance Experience -->
+    <div class="cyber-card mb-8">
+        <div class="flex items-start space-x-6">
+            <div class="cyber-icon-lg">
+                <i class="fas fa-cogs text-neon-green text-2xl"></i>
+            </div>
+            <div class="flex-1">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                    <h3 class="text-2xl font-bold font-orbitron">Outsourced Quality Assurance Intern</h3>
+                    <span class="text-lg font-mono text-neon-green">Freelance Contract for Mr. Shun Paolo Beuno</span>
+                </div>
+                <p class="text-lg leading-relaxed text-gray-300 font-mono">
+                    As an outsourced Quality Assurance contractor, I was responsible for identifying and troubleshooting issues, 
+                    creating detailed test cases, and performing manual testing to ensure the quality and performance standards 
+                    were met before product releases.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Casting Agent Experience -->
+    <div class="cyber-card mb-8">
+        <div class="flex items-start space-x-6">
+            <div class="cyber-icon-lg">
+                <i class="fas fa-users text-neon-green text-2xl"></i>
+            </div>
+            <div class="flex-1">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
+                    <h3 class="text-2xl font-bold font-orbitron">Outsourced Casting Agent</h3>
+                    <span class="text-lg font-mono text-neon-green">Freelance Contract for Ms. Krishelle Pinili</span>
+                </div>
+                <p class="text-lg leading-relaxed text-gray-300 font-mono">
+                    As an outsourced Casting Agent, I worked closely with directors and producers to scout and audition talent for various projects. 
+                    I coordinated auditions, managed talent schedules, and contributed to the overall casting strategy for film and TV productions.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+
+            <div>
+                <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+            <span class="text-neon-green">&lt;</span>Achievements & Certifications<span class="text-neon-green">/&gt;</span>
+        </h2>
+        <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+            Showcasing my certifications and achievements
+        </p>
+    </div>
+    
+    <!-- Grid with Equal Sized Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Academic Excellence Card -->
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-trophy text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">Academic Excellence</h4>
+            <p class="text-gray-300 font-mono">Consistent Honor Student & Dean's Lister at Batangas State University</p>
+        </div>
+
+        <!-- TESDA Certified Card -->
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-certificate text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">TESDA Certified</h4>
+            <p class="text-gray-300 font-mono">Computer System Servicing NCII - Best in CSS</p>
+        </div>
+
+        <!-- Leadership Card -->
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-users text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">Leadership</h4>
+            <p class="text-gray-300 font-mono">Multiple student leadership roles and community involvement</p>
+        </div>
+
+        <!-- Cybersecurity Card -->
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-shield-alt text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">Cybersecurity</h4>
+            <p class="text-gray-300 font-mono">BitCon Seminar participant - Cybersecurity & Trends. Participated in a seminar focused on the latest trends in cybersecurity, gaining insights into threat detection, data protection strategies, and emerging technologies in the field.
+</p>
+        </div>
+
+        <!-- CCNAv7: Introduction to Networks Card -->
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-certificate text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">CCNAv7: Introduction to Networks</h4>
+            <p class="text-gray-300 font-mono">Certification in networking fundamentals from Cisco Networking Academy, focusing on the basics of IP addressing, network topologies, and routing protocols.</p>
+        </div>
+
+        <div class="cyber-achievement-card flex flex-col items-center justify-between p-6">
+            <div class="cyber-icon-lg mx-auto mb-6">
+                <i class="fas fa-briefcase text-neon-green text-2xl"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 font-orbitron">Transcending: Work Placement and Career Orientation Seminar</h4>
+            <p class="text-gray-300 font-mono">Participated in a seminar focused on career orientation and the professional journey, equipping myself with essential skills for workplace success and career development.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Modern contact section with improved form design -->
+    <!-- Enhanced contact section with cyber styling -->
+    <!-- Contact Section -->
+<section id="contact" class="py-20 cyber-section">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-4 font-orbitron">
+                <span class="text-neon-green">&lt;</span>Contact<span class="text-neon-green">/&gt;</span>
+            </h2>
+            <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
+                Let's discuss new opportunities, interesting projects, or just have a chat about technology
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+                <div class="cyber-card">
+                    <h3 class="text-2xl font-bold mb-6 font-orbitron">Let's Connect</h3>
+                    <p class="text-lg mb-8 text-gray-300 font-mono">
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just having a chat about technology and innovation.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <div class="cyber-contact-item">
+                        <div class="cyber-icon">
+                            <i class="fas fa-envelope text-neon-green"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 font-orbitron">Email</h4>
+                            <a href="mailto:kristhianpinili@gmail.com" class="text-neon-green hover:text-green-300 transition-colors font-mono">kristhianpinili@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="cyber-contact-item">
+                        <div class="cyber-icon">
+                            <i class="fas fa-phone text-neon-green"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 font-orbitron">Phone</h4>
+                            <a href="tel:+639081693403" class="text-neon-green hover:text-green-300 transition-colors font-mono">+63 908 169 3403</a>
+                        </div>
+                    </div>
+                    <div class="cyber-contact-item">
+                        <div class="cyber-icon">
+                            <i class="fas fa-map-marker-alt text-neon-green"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 font-orbitron">Location</h4>
+                            <p class="text-gray-300 font-mono">Taal, Batangas, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="cyber-contact-item">
+                        <div class="cyber-icon">
+                            <i class="fab fa-github text-neon-green"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 font-orbitron">GitHub</h4>
+                            <a href="https://github.com/chosenvision" target="_blank" class="text-neon-green hover:text-green-300 transition-colors font-mono">GitHub Profile</a>
+                        </div>
+                    </div>
+                    <!-- Added Resume Download Button -->
+                    <div class="cyber-contact-item">
+                        <div class="cyber-icon">
+                            <i class="fas fa-file-pdf text-neon-green"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1 font-orbitron">Resume</h4>
+                            <a href="C:\Users\krist\Downloads\Kristhian Pinili - Resume.pdf" download="Kristhian_Pinili_Resume.pdf" class="text-neon-green hover:text-green-300 transition-colors font-mono">
+                                <i class="fas fa-download mr-2"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cyber-form-container flex justify-center items-center">
+                <form class="space-y-6 w-full max-w-2xl">
+                    <div>
+                        <input type="text" placeholder="Your Name" required class="cyber-input">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" required class="cyber-input">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Subject" required class="cyber-input">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" required class="cyber-input resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="cyber-btn-primary w-full">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Simplified footer with modern styling -->
+    <!-- Enhanced footer with cyber styling -->
+    <footer class="py-8 cyber-footer">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-400 font-mono">&copy; 2024 Kristhian Pinili. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#home" class="text-gray-400 hover:text-neon-green transition-colors font-mono">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-neon-green transition-colors font-mono">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-neon-green transition-colors font-mono">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-neon-green transition-colors font-mono">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
