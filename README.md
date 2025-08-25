@@ -68,9 +68,25 @@ Here are some of the projects I'm proud to have built or contributed to:
 ### 📜 Certifications & Seminars
 
 - 🛠 **Computer System Servicing NCII** (TESDA Certified)  
-- 🧭 **Transcending: Work Placement and Career Orientation Seminar**  
-- 🔐 **BitCon Seminar** (Cybersecurity & Trends)  
+- 🧭 **Transcending: Work Placement and Career Orientation Seminar** – Gained insights into career development, workplace readiness, and essential skills for success in the professional world.  
+- 🔐 **BitCon Seminar** – Cybersecurity & Trends. Participated in a seminar focused on the latest trends in cybersecurity, gaining insights into threat detection, data protection strategies, and emerging technologies in the field.  
 - 🌐 **Computer Networking 1**  
+
+---
+
+### 💼 Professional Experience
+
+#### 🖥 **Website Development Intern**  
+**National Transmission Corporation**  
+- Tasked with creating a comprehensive ticketing system for the IT/IS Division. Developed a system that allows all incoming requests to be processed efficiently, improving workflow and response times for technical support.
+
+#### 🛠 **Outsourced Quality Assurance Intern**  
+**Freelance Contract for Mr. Shun Paolo Beuno**  
+- As an outsourced Quality Assurance contractor, I was responsible for identifying and troubleshooting issues, creating detailed test cases, and performing manual testing to ensure the quality and performance standards were met before product releases.
+
+#### 🎬 **Outsourced Casting Agent**  
+**Freelance Contract for Ms. Krishelle Pinili**  
+- Worked closely with directors and producers to scout and audition talent for various projects. I coordinated auditions, managed talent schedules, and contributed to the overall casting strategy for film and TV productions.
 
 ---
 
@@ -95,16 +111,12 @@ When I’m not coding or studying, you can find me:
 ### 📫 How to Reach Me
 
 - 📧 Email: [kristhianpinili@gmail.com](mailto:kristhianpinili@gmail.com)  
-- 📱 Mobile: +93 908 169 3403  
+- 📱 Mobile: +63 908 169 3403  
 - 📍 Based in Taal, Batangas  
-- 🖥 GitHub: ([https://github.com/kristhianpinili](https://github.com/chosenvision)) 
+- 🖥 GitHub: [https://github.com/chosenvision](https://github.com/chosenvision) 
 
 ---
 
 > "I don't just build programs — I build purpose through code."
 
 Thanks for stopping by! Let's learn, build, and grow together 🚀
-<<<<<<< HEAD
->>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
-=======
->>>>>>> bcf80ee1f07a8adac65b1453bbe68a4c62a5b8e8
