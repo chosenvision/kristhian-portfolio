@@ -9,6 +9,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .bg-neon-green {
+            background: #00ff41 !important;
+        }
+    </style>
 </head>
 
 <body class="antialiased">
@@ -21,6 +26,15 @@
                         <span class="text-neon-green">&lt;</span>KP<span class="text-neon-green">/&gt;</span>
                     </a>
                 </div>
+                <!-- Hamburger button (mobile only) -->
+                <button id="menu-toggle"
+                    class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded border-2 border-neon-green bg-cyber-black shadow-lg focus:outline-none focus:ring-2 focus:ring-neon-green"
+                    aria-label="Open menu">
+                    <span style="background:#00ff41" class="block w-6 h-1 mb-1 rounded transition-all duration-300"></span>
+                    <span style="background:#00ff41" class="block w-6 h-1 mb-1 rounded transition-all duration-300"></span>
+                    <span style="background:#00ff41" class="block w-6 h-1 rounded transition-all duration-300"></span>
+                </button>
+                <!-- Desktop menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#home" class="nav-link">Home</a>
@@ -31,29 +45,18 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </div>
                 </div>
-                <div class="md:hidden">
-                    <button class="hamburger p-2">
-                        <span class="sr-only">Open menu</span>
-                        <div class="w-6 h-6 relative">
-                            <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
-                            <span class="hamburger-line"></span>
-                        </div>
-                    </button>
-                </div>
             </div>
         </div>
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 mt-2 bg-cyber-black p-6 rounded-lg shadow-lg absolute right-6 top-16 z-50">
+            <a href="#home" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">Home</a>
+            <a href="#about" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">About</a>
+            <a href="#skills" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">Skills</a>
+            <a href="#projects" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">Projects</a>
+            <a href="#experience" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">Experience</a>
+            <a href="#contact" class="nav-link bg-cyber-gray px-4 py-2 rounded hover:bg-neon-green hover:text-cyber-black transition">Contact</a>
+        </div>
     </nav>
-
-    <!-- Add this after the hamburger button inside your nav -->
-<div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 bg-cyber-black p-6 rounded-lg shadow-lg absolute right-6 top-16 z-50">
-    <a href="#home" class="nav-link">Home</a>
-    <a href="#about" class="nav-link">About</a>
-    <a href="#skills" class="nav-link">Skills</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#contact" class="nav-link">Contact</a>
-</div>
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center cyber-hero pt-16 px-6 lg:px-8">
@@ -63,7 +66,7 @@
                 <!-- Content Section -->
                 <div class="space-y-8 order-2 lg:order-1">
                     <p class="text-lg font-mono text-neon-green cyber-text-glow">
-                        <span class="typing-cursor">$</span> whoami
+                        <span class="typing-cursor">$</span> chousen
                     </p>
                     <h1 class="text-5xl lg:text-6xl font-bold leading-tight font-orbitron">
                         Kristhian <span class="text-neon-green cyber-text-glow">Pinili</span>
@@ -82,7 +85,7 @@
                         </div>
                         <div class="terminal-content">
                             <p class="font-mono text-sm">
-                                <span class="text-neon-green">kristhian@dev:~$</span> cat about.txt<br>
+                                <span class="text-neon-green">kristhian@dev:~$</span> chou pinili.txt<br>
                                 <span class="text-gray-300">"I don't just build programs — I build purpose through code."</span><br>
                                 <span class="text-gray-400">Detail-oriented, solutions-driven junior software engineer passionate about creating impactful digital experiences.</span>
                             </p>
@@ -131,7 +134,7 @@
                     <span class="text-neon-green">&lt;</span>About<span class="text-neon-green">/&gt;</span>
                 </h2>
                 <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-                    Passionate about creating meaningful solutions that make a real impact
+                    Passionate about creating meaningful solutions that make a real impact.
                 </p>
             </div>
             <div class="grid lg:grid-cols-3 gap-12">
@@ -177,7 +180,7 @@
                     <span class="text-neon-green">&lt;</span>Skills<span class="text-neon-green">/&gt;</span>
                 </h2>
                 <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-                    A comprehensive toolkit for building modern applications
+                    A comprehensive toolkit for building modern applications.
                 </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -292,7 +295,7 @@
                     <span class="text-neon-green">&lt;</span>Projects<span class="text-neon-green">/&gt;</span>
                 </h2>
                 <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-                    A showcase of my technical expertise and creative problem-solving
+                    A showcase of my technical expertise and creative problem-solving.
                 </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -441,7 +444,7 @@
                     <span class="text-neon-green">&lt;</span>Experience<span class="text-neon-green">/&gt;</span>
                 </h2>
                 <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-                    Building expertise through hands-on experience and continuous learning
+                    Building expertise through hands-on experience and continuous learning.
                 </p>
             </div>
             
@@ -474,7 +477,7 @@
             <div class="flex-1">
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <h3 class="text-2xl font-bold font-orbitron">Outsourced Quality Assurance Intern</h3>
-                    <span class="text-lg font-mono text-neon-green">Freelance Contract for Mr. Shun Paolo Beuno</span>
+                    <span class="text-lg font-mono text-neon-green">Freelance Contract</span>
                 </div>
                 <p class="text-lg leading-relaxed text-gray-300 font-mono">
                     As an outsourced Quality Assurance contractor, I was responsible for identifying and troubleshooting issues, 
@@ -494,7 +497,7 @@
             <div class="flex-1">
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <h3 class="text-2xl font-bold font-orbitron">Outsourced Casting Agent</h3>
-                    <span class="text-lg font-mono text-neon-green">Freelance Contract for Ms. Krishelle Pinili</span>
+                    <span class="text-lg font-mono text-neon-green">Freelance Contract</span>
                 </div>
                 <p class="text-lg leading-relaxed text-gray-300 font-mono">
                     As an outsourced Casting Agent, I worked closely with directors and producers to scout and audition talent for various projects. 
@@ -515,7 +518,7 @@
             <span class="text-neon-green">&lt;</span>Achievements & Certifications<span class="text-neon-green">/&gt;</span>
         </h2>
         <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-            Showcasing my certifications and achievements
+            Showcasing my certifications and achievements.
         </p>
     </div>
     
@@ -595,7 +598,7 @@
                 <span class="text-neon-green">&lt;</span>Contact<span class="text-neon-green">/&gt;</span>
             </h2>
             <p class="text-xl max-w-3xl mx-auto text-gray-300 font-mono">
-                Let's discuss new opportunities, interesting projects, or just have a chat about technology
+                Let's discuss new opportunities, interesting projects, or just have a chat about technology.
             </p>
         </div>
         <div class="grid lg:grid-cols-2 gap-12">
@@ -701,5 +704,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Optional: Hide menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
